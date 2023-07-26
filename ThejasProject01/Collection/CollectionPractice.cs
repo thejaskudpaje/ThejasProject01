@@ -2,6 +2,7 @@
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -154,6 +155,17 @@ namespace ThejasProject01.Collection
             foreach (var i in sd)
             {
                 Console.Write(i + " "); //[1, idli] [2, puliyogare] [3, dosa] [5, vada]
+            }
+
+
+            //SortedList
+            var sl=new SortedList<int, String>();
+            sl.Add(1, "alpha");
+            sl.Add(3, "beta");
+            sl.Add(2, "gama");
+            foreach (var i in sl)
+            {
+                Console.Write(i + " "); //[1, alpha] [2, gama] [3, beta]
             }
         }
     }
