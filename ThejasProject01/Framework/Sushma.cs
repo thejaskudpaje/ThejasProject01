@@ -10,7 +10,7 @@ namespace ThejasProject01.Framework
     {
         const int a = 10;
         static int b = 20;
-        public abstract void Neil();
+        public  void Neil();
         public abstract void Abhi(); 
         public abstract void Jerry();
     }
@@ -88,7 +88,7 @@ namespace ThejasProject01.Framework
         public Yesu()  : this(10){
             Console.WriteLine("No argument constructor Of Yesu");
         }
-        public override void Jerry()
+        public override sealed void Jerry()
         {
             Console.WriteLine("yesu Calling Jerry");
         }
@@ -96,9 +96,9 @@ namespace ThejasProject01.Framework
 
     public class Sushma
     {
-        public static void Main()
+     /*   public static void Main()
         {
-            /*Creating the upcasted object for abstract class Datta*/
+           / /*Creating the upcasted object for abstract class Datta
             Datta ob1=new Veena();
             Yesu ob2=new Yesu();
 
@@ -115,6 +115,6 @@ namespace ThejasProject01.Framework
 
 
 
-        }
+        } */
     }
 }
