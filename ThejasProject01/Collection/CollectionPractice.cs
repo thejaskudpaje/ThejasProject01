@@ -63,6 +63,7 @@ namespace ThejasProject01.Collection
             st.Push("Banana");
             st.Push("Orange");
             st.Push("jackfruite");
+            //printing as LIFO order
             foreach (var i in st)
             {
                 Console.Write(i + " "); //jackfruite Orange Banana Apple Banana
@@ -79,6 +80,27 @@ namespace ThejasProject01.Collection
 
              var a=st.Peek();
             Console.WriteLine(a);//Orange
+
+            
+            //Queue
+            var q=new Queue<int>();
+            q.Enqueue(10);
+            q.Enqueue(20);
+            q.Enqueue(30);
+            q.Enqueue(40);
+
+            //Printing as FIFO order
+            foreach (var i in q)
+            {
+                Console.Write(i + " "); // 10 20 30 40
+            }
+            Console.WriteLine();
+            //removing first element and printing
+            q.Dequeue();
+            foreach (var i in q)
+            {
+                Console.Write(i + " "); //  20 30 40
+            }
 
         }
     }
