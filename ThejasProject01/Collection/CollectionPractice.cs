@@ -15,12 +15,26 @@ namespace ThejasProject01.Collection
             var names= new List<string>();
             names.Add("virat");
             names.Add("rohit");
-            Console.WriteLine(names[0]);
+            Console.WriteLine(names[0]);  //virat
 
             //declaration and initialization at same time
-            var name = new List<string> { "hardhik", "krunal" };
+            var name = new List<string> { "hardhik", "krunal" };//hardhik
             Console.WriteLine(name[0]);
 
+
+            //HashSet
+            var hs=new HashSet<int>();   
+            hs.Add(15);
+            hs.Add(10);
+            hs.Add(15);
+            hs.Add(20);
+            hs.Add(30);
+            hs.Add(10);
+
+            foreach(var i in hs)
+            {
+                Console.Write(i+" "); //15 10 20 30
+            }
         }
     }
 }
