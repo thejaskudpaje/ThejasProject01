@@ -103,6 +103,8 @@ namespace ThejasProject01.Collection
             }
             Console.WriteLine();
 
+
+
             //LinkedList
             var ll=new LinkedList<char>();
             ll.AddFirst('a');
@@ -122,6 +124,24 @@ namespace ThejasProject01.Collection
                 Console.Write(i + " "); //b y a x c d
             }
 
+
+            //Dictionary
+            var d=new Dictionary<int, String>();
+            d.Add(1, "bangalore");
+            d.Add(2, "chennai");
+            d.Add(3, "mumbai");
+            d.Add(4, "kolkatta");
+
+            foreach (var i in d)
+            {
+                Console.Write(i + " "); // [1, bangalore] [2, chennai] [3, mumbai] [4, kolkatta]
+            }
+            Console.WriteLine();
+            foreach (KeyValuePair<int, String> i in d)
+            {
+                Console.Write(i.Key + ":"+i.Value+"  ");//1:bangalore  2:chennai  3:mumbai  4:kolkatta
+            }
+            Console.WriteLine();
         }
     }
 }
