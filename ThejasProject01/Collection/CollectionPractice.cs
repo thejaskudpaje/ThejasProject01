@@ -54,6 +54,31 @@ namespace ThejasProject01.Collection
             {
                 Console.Write(i + " "); //a c i m n
             }
+            Console.WriteLine();  
+
+            //Stack
+            var st=new Stack<String>();
+            st.Push("Banana");
+            st.Push("Apple");
+            st.Push("Banana");
+            st.Push("Orange");
+            st.Push("jackfruite");
+            foreach (var i in st)
+            {
+                Console.Write(i + " "); //jackfruite Orange Banana Apple Banana
+            }
+
+            //Printing and deleting last in element
+            Console.WriteLine("\n"+st.Pop());
+
+            //printing after pop
+            foreach (var i in st)
+            {
+                Console.Write(i + " "); // Orange Banana Apple Banana
+            }
+
+             var a=st.Peek();
+            Console.WriteLine(a);//Orange
 
         }
     }
