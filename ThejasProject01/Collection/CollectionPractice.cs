@@ -101,6 +101,26 @@ namespace ThejasProject01.Collection
             {
                 Console.Write(i + " "); //  20 30 40
             }
+            Console.WriteLine();
+
+            //LinkedList
+            var ll=new LinkedList<char>();
+            ll.AddFirst('a');
+            ll.AddFirst('b');
+            ll.AddLast('c');
+            ll.AddLast('d');
+            foreach (var i in ll)
+            {
+                Console.Write(i + " "); //b a c d
+            }
+            Console.WriteLine();
+            LinkedListNode<char> node = ll.Find('a');
+            ll.AddAfter(node ,'x');
+            ll.AddBefore(node, 'y');
+            foreach (var i in ll)
+            {
+                Console.Write(i + " "); //b y a x c d
+            }
 
         }
     }
