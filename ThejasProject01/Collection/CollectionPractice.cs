@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace ThejasProject01.Collection
             var names= new List<string>();
             names.Add("virat");
             names.Add("rohit");
+            Console.WriteLine("Output of List");
             Console.WriteLine(names[0]);  //virat
 
             //declaration and initialization at same time
@@ -30,11 +32,29 @@ namespace ThejasProject01.Collection
             hs.Add(20);
             hs.Add(30);
             hs.Add(10);
-
-            foreach(var i in hs)
+            Console.WriteLine("\nOutput of HashSet");
+            //Printing using for each loop
+            foreach (var i in hs)
             {
                 Console.Write(i+" "); //15 10 20 30
             }
+            Console.WriteLine();
+
+            //SortedSet
+            var ss=new SortedSet<char>();
+            ss.Add('m');
+            ss.Add('n');
+            ss.Add('a');
+            ss.Add('i');
+            ss.Add('m');
+            ss.Add('c');
+            Console.WriteLine("\nOutput of SortedSet");
+            //Printing using for each loop
+            foreach (var i in ss)
+            {
+                Console.Write(i + " "); //a c i m n
+            }
+
         }
     }
 }
