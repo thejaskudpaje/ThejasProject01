@@ -142,6 +142,19 @@ namespace ThejasProject01.Collection
                 Console.Write(i.Key + ":"+i.Value+"  ");//1:bangalore  2:chennai  3:mumbai  4:kolkatta
             }
             Console.WriteLine();
+
+
+            //SortedDictionary
+            var sd=new SortedDictionary<int, String>();
+            sd.Add(1, "idli");
+            sd.Add(5, "vada");
+            sd.Add(3, "dosa");
+            sd.Add(2, "puliyogare");
+            //sorting and printing based on the value
+            foreach (var i in sd)
+            {
+                Console.Write(i + " "); //[1, idli] [2, puliyogare] [3, dosa] [5, vada]
+            }
         }
     }
 }
