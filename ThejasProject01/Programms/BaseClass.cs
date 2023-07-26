@@ -9,9 +9,9 @@ namespace ThejasProject01.Programms
 {
     internal class BaseClass
     {
-        public static void Main()
+       /* public static void Main()
         {
-            /* FirstThreeMinNumberOfAnArray p1=new FirstThreeMinNumberOfAnArray();
+             FirstThreeMinNumberOfAnArray p1=new FirstThreeMinNumberOfAnArray();
              p1.execute();
 
              AdditionOfAnArray p2= new AdditionOfAnArray();  
@@ -21,13 +21,13 @@ namespace ThejasProject01.Programms
              p3.execute();   
 
             ReverseEachWordinAString p4=new ReverseEachWordinAString();
-            p4.execute(); */
+            p4.execute(); 
 
             IntegersComeFirstAndZeroAtLast p5 = new IntegersComeFirstAndZeroAtLast();
             p5.execute();
 
             
 
-        }
+        }*/
     }
 }
